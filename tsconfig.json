@@ -5,24 +5,18 @@
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": false,
     "skipLibCheck": true,
-    "esModuleInterop": true,
+    "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "module": "ESNext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules",
-    "vite.config.ts"
-  ],
+  "include": ["src", "components", "types.ts", "constants.ts", "App.tsx", "index.tsx"],
+  "exclude": ["node_modules", "vite.config.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
