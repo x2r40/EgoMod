@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { Preloader } from './components/Preloader';
 import { Header } from './components/Header';
 import { FeaturedApps } from './components/FeaturedApps';
@@ -53,6 +54,7 @@ const App: React.FC = () => {
         <Footer />
         <DownloadModal game={selectedGame} onClose={handleCloseModal} />
       </div>
+      <Analytics />
     </>
   );
 };
